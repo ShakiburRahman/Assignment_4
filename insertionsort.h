@@ -6,7 +6,8 @@ using namespace std;
 
 class insertion{
 public:
-    Insertion();
+   void Insertion(int arr[],int arr_size);
+   void InsertionVector(vector<int>& data);
 };
 
 #endif // INSERTIONSORT
