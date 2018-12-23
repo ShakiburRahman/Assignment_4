@@ -41,4 +41,4 @@ void insertion::InsertionVector(vector<int> &data){
                 cout <<""<<endl;
             }
     }
-}
+}}
