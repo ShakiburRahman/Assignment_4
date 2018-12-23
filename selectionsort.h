@@ -1,0 +1,5 @@
+#ifndef SELECTIONSORT
+#define SELECTIONSORT
+
+#endif // SELECTIONSORT
+

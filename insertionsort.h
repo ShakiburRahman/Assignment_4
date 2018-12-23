@@ -1,0 +1,5 @@
+#ifndef INSERTIONSORT
+#define INSERTIONSORT
+
+#endif // INSERTIONSORT
+
