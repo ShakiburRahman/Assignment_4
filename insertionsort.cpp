@@ -25,7 +25,7 @@ void insertion::Insertion(int arr[], int arr_size){
 
 
 
-void insertion::InsertionVector(vector<int> &data){
+void insertion::InsertionVector(vector<int>& data){
     if(data.size()>1){
         for(int index=1; index< data.size();index++){
             int number = index-1;
@@ -35,10 +35,10 @@ void insertion::InsertionVector(vector<int> &data){
                 number--;
 
         }
-            data[number-1]= key;
-            for(vector<int>::iterator value = data.begin(); value!=data.end();++value){
+            data[number+1]= key;
+            for(vector<int>:: iterator value = data.begin(); value!=data.end();++value)
                 cout<<*value<<" ";
                 cout <<""<<endl;
-            }
+
     }
 }}
