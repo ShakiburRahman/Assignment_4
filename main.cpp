@@ -1,6 +1,8 @@
 #include <iostream>
 #include "insertionsort.h"
-
+#include "bubblesort.h"
+#include "mergesort.h"
+#include "selectionsort.h"
 using namespace std;
 
 int main()
@@ -22,6 +24,24 @@ int main()
         }
      vector<int> vectorInsertionSort(arr,arr+sizeof(arr)/sizeof(int));
     a.InsertionVector(vectorInsertionSort);
+
+
+
+
+    int arrayBubbleSort[8];
+        cout<<"\nArray Base"<<endl;
+        for(int index=0; index<8; index++)
+        {
+            arrayBubbleSort[index]=arr[index];
+        }
+        bubbleSort b;
+        b.BubbleSorter(arrayBubbleSort,8);
+
+        for(int index=0; index<8; index++)
+        {
+            cout<<arrayBubbleSort[index]<<" ";
+        }
+        cout<<"\n\n\n"<<endl;
 
 
 

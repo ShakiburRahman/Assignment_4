@@ -8,8 +8,10 @@ void bubbleSort:: BubbleSorter(int *array, int size){
     int number= 0;
     int temp;
     while (flag){
+
         flag= false;
         number++;
+
         for(int index=0; index<size-number; ++index ){
             if(array[index]> array[index+1]){
                 temp= array[index];
@@ -44,4 +46,4 @@ void bubbleSort::BubbleSorterVector(vector<int> &data){
                     cout<< *value<<" ";
                 }
                 cout<<""<<endl;
-            }
+            }}}}
