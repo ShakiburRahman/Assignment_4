@@ -26,10 +26,11 @@ int main()
     a.InsertionVector(vectorInsertionSort);
 
 
-
+    cout<< "Using array-Bubblesort "<<endl;
+    cout << "------------" << endl;
 
     int arrayBubbleSort[8];
-        cout<<"\nArray Base"<<endl;
+
         for(int index=0; index<8; index++)
         {
             arrayBubbleSort[index]=arr[index];
@@ -41,7 +42,18 @@ int main()
         {
             cout<<arrayBubbleSort[index]<<" ";
         }
-        cout<<"\n\n\n"<<endl;
+        cout << "------------" << endl;
+        cout<< "Using vector-Insertionsort "<<endl;
+        cout << "------------" << endl;
+
+        vector<int>BubbleSorterVector(arr,arr+sizeof(arr)/ sizeof(int));
+        b.BubbleSorterVector(BubbleSorterVector);
+        for(int index=0; index<BubbleSorterVector.size(); index++){
+            cout<< BubbleSorterVector[index]<<" ";}
+
+
+
+
 
 
 
