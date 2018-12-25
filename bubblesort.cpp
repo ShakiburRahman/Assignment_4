@@ -25,3 +25,23 @@ void bubbleSort:: BubbleSorter(int *array, int size){
         }
     }
 }
+
+
+void bubbleSort::BubbleSorterVector(vector<int> &data){
+    bool flag = true;
+    int number= 0;
+    int temp;
+    while (flag){
+        flag= false;
+        number++;
+        for(int index=0; index<data.size()-number; ++index ){
+            if(data[index]> data[index+1]){
+                temp= data[index];
+                data[index]= data[index+1];
+                data[index+1]=temp;
+                flag=true;
+                for(vector<int>::iterator value= data.begin();value !=data.end(); ++value){
+                    cout<< *value<<" ";
+                }
+                cout<<""<<endl;
+            }
