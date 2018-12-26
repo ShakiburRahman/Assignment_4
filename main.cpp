@@ -53,6 +53,9 @@ int main()
         cout << "------------" << endl;
 
 
+
+        cout<< "Using array-Mergesort "<<endl;
+        cout << "------------" << endl;
         int arrayMergeSort[8];
            cout<<"\nArray Base"<<endl;
            for(int index=0;index<8;index++)
@@ -61,13 +64,22 @@ int main()
            }
            mergesort c;
            c.MergeSorter(arrayMergeSort,8);
-           cout<<"Merge Sort Final Output for Array Base : "<<endl;
            for(int index=0;index<8;index++)
            {
                cout<<arrayMergeSort[index]<<" ";
            }
 
+           cout << "------------" << endl;
+           cout<< "Using vector-Insertionsort "<<endl;
+           cout << "------------" << endl;
 
+           vector<int> vectorMergeSort(arr,arr+sizeof(arr)/sizeof(int));
+              c.MergeSorterVector(vectorMergeSort);
+              cout<<"Merge Sort Final Output for Vector : "<<endl;
+              for(int index=0; index<vectorMergeSort.size(); index++)
+              {
+                  cout<<vectorMergeSort[index]<<" ";
+              }
 
 
     cout << "Hello World!" << endl;
