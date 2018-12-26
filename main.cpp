@@ -53,6 +53,19 @@ int main()
         cout << "------------" << endl;
 
 
+        int arrayMergeSort[8];
+           cout<<"\nArray Base"<<endl;
+           for(int index=0;index<8;index++)
+           {
+               arrayMergeSort[index]=arr[index];
+           }
+           mergesort c;
+           c.MergeSorter(arrayMergeSort,8);
+           cout<<"Merge Sort Final Output for Array Base : "<<endl;
+           for(int index=0;index<8;index++)
+           {
+               cout<<arrayMergeSort[index]<<" ";
+           }
 
 
 

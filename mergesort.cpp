@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void MergeSorter(int arr[],int arr_size){
+void Merger(int arr[], int low, int mid, int high){
 int *temp= new int[high-low+1];
 int index= low, key=mid+1;
 int lead=0;
@@ -26,13 +26,28 @@ while(key<= high)
    {
        cout<<arr[index]<<" ";
    }
-   cout<<""<<endl;
-
-
-
-
-
-
-
-
 }
+
+
+   void MergeSortHelper(int arr[], int low, int high){
+       int mid;
+       if(low < high)
+       {
+           mid = (low + high) / 2;
+           MergeSortHelper(arr, low, mid);
+           MergeSortHelper(arr, mid+1, high);
+           Merger(arr, low, mid, high);
+       }
+   }
+
+
+
+
+
+
+
+
+
+
+
+

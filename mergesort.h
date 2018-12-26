@@ -4,7 +4,7 @@
 #include <vector>
 using namespace std;
 
-class megesort{
+class mergesort{
 
 public:
     void MergeSorter(int arr[],int arr_size);
