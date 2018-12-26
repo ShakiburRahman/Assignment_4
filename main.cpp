@@ -50,7 +50,7 @@ int main()
         b.BubbleSorterVector(BubbleSorterVector);
         for(int index=0; index<BubbleSorterVector.size(); index++){
             cout<< BubbleSorterVector[index]<<" ";}
-
+        cout << "------------" << endl;
 
 
 
