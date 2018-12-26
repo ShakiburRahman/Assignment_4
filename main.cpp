@@ -82,6 +82,43 @@ int main()
               }
 
 
+
+              int arraySelectionSort[8];
+                 cout<<"\nArray Base"<<endl;
+                 for(int index=0; index<8; index++)
+                 {
+                     arraySelectionSort[index] = arr[index];
+                 }
+                 selectionsort d;
+                 d.SelectionSorter(arraySelectionSort,8);
+                 cout<<"Selection Sort Final Output for Array Base : " <<endl;
+                 for(int index=0; index<8; index++)
+                 {
+                     cout<<arraySelectionSort[index]<<" ";
+                 }
+                 cout<<"\n\n\n"<<endl;
+
+                 cout<<"Vector Part"<<endl;
+                 vector<int> vectorSelectionSort(arr,arr+sizeof(arr)/sizeof(int));
+                 d.SelectioSorterVector(vectorSelectionSort);
+                 cout<<"Selection Sort Final Output for Vector : "<<endl;
+                 for(int index=0;index<vectorSelectionSort.size();index++)
+                 {
+                     cout<<vectorSelectionSort[index]<<" ";
+                 }
+                 cout<<"\n"<<endl;
+
+
+
+
+
+
+
+
+
+
+
+
     cout << "Hello World!" << endl;
     return 0;
 }
