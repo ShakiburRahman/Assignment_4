@@ -4,7 +4,7 @@
 #include <iostream>
 using namespace std;
 
-class selectionSort{
+class selectionsort{
 
 public:
       void SelectionSorter(int arr[], int arr_size);
