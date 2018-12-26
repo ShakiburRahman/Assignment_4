@@ -40,6 +40,11 @@ while(key<= high)
        }
    }
 
+   void MergeSort::MergeSorter(int arr[], int arr_size)
+   {
+       cout<<"Showing Here Every Step for Merge Sort Using Array Base"<<endl;
+       MergeSortHelper(arr, 0, arr_size-1);
+   }
 
 
 
