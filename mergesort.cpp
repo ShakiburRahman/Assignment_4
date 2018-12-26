@@ -42,7 +42,7 @@ while(key<= high)
 
    void mergesort::MergeSorter(int arr[], int arr_size)
    {
-       cout<<"Showing Here Every Step for Merge Sort Using Array Base"<<endl;
+
        MergeSortHelper(arr, 0, arr_size-1);
    }
 
@@ -87,7 +87,7 @@ while(key<= high)
 
    void mergesort::MergeSorterVector(vector<int> &data)
    {
-       cout<<"Showing Here Every Step for Merge Sort Using Vector"<<endl;
+
        MergeSortHelperVector(data,0,data.size()-1);
    }
 

@@ -5,7 +5,7 @@ using namespace std;
 
 void selectionsort::SelectionSorter(int arr[], int arr_size)
 {
-    cout<<"Showing Here Every Step for Selection Sort Using Array Base"<<endl;
+
     for(int index = 0; index < arr_size-1; ++index)
     {
         int Min = index;
@@ -26,7 +26,7 @@ void selectionsort::SelectionSorter(int arr[], int arr_size)
 
 void selectionsort::SelectioSorterVector(vector <int> &data)
 {
-    cout<<"Showing Here Every Step for Selection Sort Using Vector"<<endl;
+
     int index,number,first_element,size = data.size();
     for(index=0; index<size+1; index++)
     {

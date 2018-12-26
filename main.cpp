@@ -31,9 +31,9 @@ int main()
 
     int arrayBubbleSort[8];
 
-        for(int index=0; index<8; index++)
+      for(int index=0; index<8; index++)
         {
-            arrayBubbleSort[index]=arr[index];
+      arrayBubbleSort[index]=arr[index];
         }
         bubbleSort b;
         b.BubbleSorter(arrayBubbleSort,8);
@@ -43,12 +43,12 @@ int main()
             cout<<arrayBubbleSort[index]<<" ";
         }
         cout << "------------" << endl;
-        cout<< "Using vector-Insertionsort "<<endl;
+        cout<< "Using vector-Bubblesort "<<endl;
         cout << "------------" << endl;
 
-        vector<int>BubbleSorterVector(arr,arr+sizeof(arr)/ sizeof(int));
-        b.BubbleSorterVector(BubbleSorterVector);
-        for(int index=0; index<BubbleSorterVector.size(); index++){
+      vector<int>BubbleSorterVector(arr,arr+sizeof(arr)/ sizeof(int));
+      b.BubbleSorterVector(BubbleSorterVector);
+      for(int index=0; index<BubbleSorterVector.size(); index++){
             cout<< BubbleSorterVector[index]<<" ";}
         cout << "------------" << endl;
 
@@ -57,51 +57,58 @@ int main()
         cout<< "Using array-Mergesort "<<endl;
         cout << "------------" << endl;
         int arrayMergeSort[8];
-           cout<<"\nArray Base"<<endl;
-           for(int index=0;index<8;index++)
+
+       for(int index=0;index<8;index++)
            {
                arrayMergeSort[index]=arr[index];
            }
-           mergesort c;
-           c.MergeSorter(arrayMergeSort,8);
-           for(int index=0;index<8;index++)
+       mergesort c;
+       c.MergeSorter(arrayMergeSort,8);
+       for(int index=0;index<8;index++)
            {
                cout<<arrayMergeSort[index]<<" ";
            }
 
            cout << "------------" << endl;
-           cout<< "Using vector-Insertionsort "<<endl;
+           cout<< "Using vector-MergeSort "<<endl;
            cout << "------------" << endl;
 
-           vector<int> vectorMergeSort(arr,arr+sizeof(arr)/sizeof(int));
-              c.MergeSorterVector(vectorMergeSort);
-              cout<<"Merge Sort Final Output for Vector : "<<endl;
-              for(int index=0; index<vectorMergeSort.size(); index++)
+       vector<int> vectorMergeSort(arr,arr+sizeof(arr)/sizeof(int));
+       c.MergeSorterVector(vectorMergeSort);
+
+       for(int index=0; index<vectorMergeSort.size(); index++)
               {
                   cout<<vectorMergeSort[index]<<" ";
               }
 
 
 
-              int arraySelectionSort[8];
-                 cout<<"\nArray Base"<<endl;
-                 for(int index=0; index<8; index++)
-                 {
+              cout << "------------" << endl;
+              cout<< "Using Array-SelectionSort "<<endl;
+              cout << "------------" << endl;
+
+        int arraySelectionSort[8];
+
+        for(int index=0; index<8; index++)
+              {
                      arraySelectionSort[index] = arr[index];
                  }
                  selectionsort d;
                  d.SelectionSorter(arraySelectionSort,8);
-                 cout<<"Selection Sort Final Output for Array Base : " <<endl;
+
                  for(int index=0; index<8; index++)
                  {
                      cout<<arraySelectionSort[index]<<" ";
                  }
-                 cout<<"\n\n\n"<<endl;
 
-                 cout<<"Vector Part"<<endl;
+
+                 cout << "------------" << endl;
+                 cout<< "Using vector-SelectionSort "<<endl;
+                 cout << "------------" << endl;
+
                  vector<int> vectorSelectionSort(arr,arr+sizeof(arr)/sizeof(int));
                  d.SelectioSorterVector(vectorSelectionSort);
-                 cout<<"Selection Sort Final Output for Vector : "<<endl;
+
                  for(int index=0;index<vectorSelectionSort.size();index++)
                  {
                      cout<<vectorSelectionSort[index]<<" ";
